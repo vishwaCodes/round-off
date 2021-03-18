@@ -1,9 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-import {
-  useDimensions,
-  useDeviceOrientation,
-} from "@react-native-community/hooks";
 
 export default function App() {
   return (
@@ -12,20 +8,23 @@ export default function App() {
         backgroundColor: "#fff",
         flex: 1,
         flexDirection: "row",
+        justifyContent: "center", // main
+        alignItems: "center", // secondary
       }}
     >
       <View
         style={{
           backgroundColor: "dodgerblue",
           width: 100,
-          height: 100,
+          height: 300,
+          alignSelf: "flex-start",
         }}
       />
       <View
         style={{
           backgroundColor: "gold",
           width: 100,
-          height: 100,
+          height: 200,
         }}
       />
       <View
