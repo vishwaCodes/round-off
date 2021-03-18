@@ -6,8 +6,11 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={4} onPress={handlePress}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium veritatis doloribus ex, quia esse earum voluptas fugiat deserunt in eligendi suscipit alias possimus, vel dolores aspernatur voluptates eius repudiandae.</Text>
-      <Image source={require('./assets/icon.png')} />
+      <Text>Round Off</Text>
+      <Image source={{
+        width: 200,
+        height: 300,
+        uri: 'https://picsum.photos/200/300' }} />
     </SafeAreaView>
   );
 }
